@@ -5,18 +5,12 @@
 class CleverCpp {
 
     public:
-
-        std::string select(std::string filetoselect) {
-
-            return selectfile = filetoselect;
-
-        }
-
+    
         CleverCpp();
 
         void read(std::string filename);
         void write(std::string filetowrite, std::string content, bool clearAndWrite, bool append);
-        void hide(bool hidefile);
+        void hide(std::string filetohide, bool hidefile);
         void readonly(bool readonlyfile);
         void deleteFile(std::string filedelete);
         void clear(std::string fileclear);
@@ -29,7 +23,6 @@ class CleverCpp {
 
     private:
 
-        std::string selectfile;
         bool defaultHide;
         bool defaultClear;
         bool defaultAppend;
