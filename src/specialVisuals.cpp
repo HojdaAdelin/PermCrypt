@@ -16,3 +16,18 @@ void CleverCpp::hide(std::string filetohide, bool hidefile) {
     }
 
 }
+
+
+void CleverCpp::readonly(std::string filetoreadonly, bool readonlyfile) {
+
+    if (readonlyfile == true) {
+
+        SetFileAttributesA(filetoreadonly.c_str(), FILE_ATTRIBUTE_READONLY);
+
+    } else {
+
+        SetFileAttributesA(filetoreadonly.c_str(), FILE_ATTRIBUTE_NORMAL);
+
+    }
+
+}
