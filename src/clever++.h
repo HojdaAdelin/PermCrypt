@@ -16,7 +16,7 @@ class CleverCpp {
         void decrypt(std::string Dfilename);
         void create(std::string filetocreate);
         std::string commandOutput(std::string command, std::string outputFile);
-        std::string fileSize(std::string filetosize);
+        int fileSize(std::string filetosize);
         void setSize(std::string filetosetsize, int size);
 
 

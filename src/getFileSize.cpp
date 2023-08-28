@@ -4,10 +4,12 @@
 #include <Windows.h>
 #include <fstream>
 
-std::string CleverCpp::fileSize(std::string filetosize) {
+int CleverCpp::fileSize(std::string filetosize) {
 
-    unsigned long long getSize = GetFileSizeEx(CreateFileA(filetosize.c_str(), GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL), NULL);
-    return std::to_string(getSize);
+    std::ifstream in_file(filetosize, std::ios::binary);
+    in_file.seekg(0, std::ios::end);
+    int file_size = in_file.tellg();
+    return file_size;
 
 }
 
