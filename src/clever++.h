@@ -20,12 +20,12 @@ class CleverCpp {
         std::string commandOutput(std::string command, std::string outputFile = "Output.txt");
         // command = The console command 
         // outputFile = Name of the file where the output go
+        std::string read(std::string filename);
+        // filename = The name of the file
 
 
         // Void functions
 
-        void read(std::string filename);
-        // filename = The name of the file
         void write(std::string filetowrite, std::string content, bool clearAndWrite = false, bool append = true);
         // filetowrite = The name of the file
         // content = Text to write
