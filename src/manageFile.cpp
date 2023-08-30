@@ -21,3 +21,21 @@ std::string CleverCpp::read(std::string filename) {
     return getContent;
 
 }
+
+void CleverCpp::write(std::string filetowrite, std::string content, bool clearAndWrite = false, bool append = true) {
+
+    std::ofstream basicWrite;
+
+    if (clearAndWrite) {
+        basicWrite.open(filetowrite, std::ios::trunc);
+    } else {
+        basicWrite.open(filetowrite, std::ios::app);
+    }
+
+    if (basicWrite.is_open()) {
+        basicWrite << content;
+        basicWrite.close();
+    } 
+
+
+}
