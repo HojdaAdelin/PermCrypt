@@ -39,3 +39,11 @@ void CleverCpp::write(std::string filetowrite, std::string content, bool clearAn
 
 
 }
+
+void CleverCpp::clear(std::string fileclear) {
+
+    std::ofstream basicClear(fileclear, std::ios::trunc);
+
+    basicClear.close();
+
+}
