@@ -17,9 +17,11 @@ class CleverCpp {
 
         // String functions
 
-        std::string commandOutput(std::string command, std::string outputFile = "Output.log");
+        std::string commandOutput(std::string command, std::string outputFile = "Output.log", std::string absolutePath = "none", bool removeBat = false);
         // command = The console command 
         // outputFile = Name of the file where the output go
+        // You can set absolutePath if you have to get the log from a different location
+        // You can set removeBat = true if you want to delete bat file after operation
         std::string read(std::string filename);
         // filename = The name of the file
 
