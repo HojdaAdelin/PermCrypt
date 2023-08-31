@@ -8,52 +8,47 @@ class CleverCpp {
 
         // Int functions
 
-        int generate(int numbers);
-        // Enter the length of the number
-
-        int fileSize(std::string filetosize);
         // Enter the name of the file
+        int fileSize(std::string filetosize);
 
 
         // String functions
-
-        std::string commandOutput(std::string command, std::string outputFile = "Output.log", std::string absolutePath = "none", bool removeBat = false);
+        
         // command = The console command 
         // outputFile = Name of the file where the output go
         // You can set absolutePath if you have to get the log from a different location
         // You can set removeBat = true if you want to delete bat file after operation
-        std::string read(std::string filename);
+        std::string commandOutput(std::string command, std::string outputFile = "Output.log", std::string absolutePath = "none", bool removeBat = false);
         // filename = The name of the file
+        std::string read(std::string filename);
 
 
         // Void functions
 
-        void write(std::string filetowrite, std::string content, bool clearAndWrite = false, bool append = true);
         // filetowrite = The name of the file
         // content = Text to write
         // clearAndWrite = Clear the file and write content
         // append = Append the text
-        void hide(std::string filetohide, bool hidefile = false);
+        void write(std::string filetowrite, std::string content, bool clearAndWrite = false, bool append = true);
         // filetohide = The name of the file
-        // hidefile = Value for hide
-        void readonly(std::string filetoreadonly, bool readonlyfile = false);
+        // hidefile = Value for hide        
+        void hide(std::string filetohide, bool hidefile = false);
         // filetoreadonly = The name of the file
         // readonlyfile = Value for read only
-        void deleteFile(std::string filedelete);
+        void readonly(std::string filetoreadonly, bool readonlyfile = false);
         // filedelete = The name of the file
-        void clear(std::string fileclear);
+        void deleteFile(std::string filedelete);
         // fileclear = The name of the file
-        void encrypt(std::string Efilename);
+        void clear(std::string fileclear);
         // Efilename = The name of the file
-        void decrypt(std::string Dfilename);
+        void encrypt(std::string Efilename);
         // Dfilename = The name of the file
-        void create(std::string filetocreate);
+        void decrypt(std::string Dfilename);
         // filetocreate = The name of the file
-        void setSize(std::string filetosetsize, int size);
+        void create(std::string filetocreate);
         // filetosetsize = The name of the file
         // size = Value for the new size in MB
-
-        
+        void setSize(std::string filetosetsize, int size);
 
     private:
 

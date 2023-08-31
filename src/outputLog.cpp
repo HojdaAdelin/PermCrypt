@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <fstream>
 
-std::string CleverCpp::commandOutput(std::string command, std::string outputFile = "Output.log", std::string absolutePath = "none", bool removeBat = false) {
+std::string CleverCpp::commandOutput(std::string command, std::string outputFile, std::string absolutePath, bool removeBat) {
 
     std::string getLog;
     std::ofstream writeBat;

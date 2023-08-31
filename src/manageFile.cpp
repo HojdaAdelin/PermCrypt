@@ -23,7 +23,7 @@ std::string CleverCpp::read(std::string filename) {
 
 }
 
-void CleverCpp::write(std::string filetowrite, std::string content, bool clearAndWrite = false, bool append = true) {
+void CleverCpp::write(std::string filetowrite, std::string content, bool clearAndWrite, bool append) {
 
     std::ofstream basicWrite;
 
