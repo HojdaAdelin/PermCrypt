@@ -55,3 +55,9 @@ void CleverCpp::create(std::string filetocreate) {
     createFile.close();
 
 }
+
+void CleverCpp::deleteFile(std::string filedelete) {
+
+    std::remove(filedelete.c_str());
+
+}   
