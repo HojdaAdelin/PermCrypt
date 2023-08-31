@@ -26,6 +26,7 @@ std::string CleverCpp::commandOutput(std::string command, std::string outputFile
 
     }
 
+    writeBat.close();
     system("misc.bat");
 
     std::string lines;
