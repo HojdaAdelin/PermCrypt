@@ -3,6 +3,7 @@
 #include <string>
 #include <Windows.h>
 #include <fstream>
+#include <cstdio>
 
 std::string CleverCpp::read(std::string filename) {
 
@@ -45,5 +46,12 @@ void CleverCpp::clear(std::string fileclear) {
     std::ofstream basicClear(fileclear, std::ios::trunc);
 
     basicClear.close();
+
+}
+
+void CleverCpp::create(std::string filetocreate) {
+
+    std::ofstream createFile(filetocreate);
+    createFile.close();
 
 }

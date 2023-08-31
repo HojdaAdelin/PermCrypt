@@ -17,7 +17,7 @@ class CleverCpp {
 
         // String functions
 
-        std::string commandOutput(std::string command, std::string outputFile = "Output.txt");
+        std::string commandOutput(std::string command, std::string outputFile = "Output.log");
         // command = The console command 
         // outputFile = Name of the file where the output go
         std::string read(std::string filename);
