@@ -52,7 +52,7 @@ class CleverCpp {
         // fileSource = Path of the file
         // destinationSource = Path to move the file
         void moveFile(std::string fileSource, std::string destinationSource);
-
+        
     private:
 
         bool defaultHide;

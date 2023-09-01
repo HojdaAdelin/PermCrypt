@@ -78,6 +78,11 @@ clever.create();
 // Set file size in MB
 void setSize(std::string filetosetsize, int size);
 clever.setSize();
+
+// Move file
+void moveFile(std::string fileSource, std::string destinationSource);
+clever.moveFile();
+
 ```
 ## To acces these functions you need to craete an object of the library main class.
 ## The main class is "CleverCpp"
