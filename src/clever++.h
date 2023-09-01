@@ -49,6 +49,9 @@ class CleverCpp {
         // filetosetsize = The name of the file
         // size = Value for the new size in MB
         void setSize(std::string filetosetsize, int size);
+        // fileSource = Path of the file
+        // destinationSource = Path to move the file
+        void moveFile(std::string fileSource, std::string destinationSource);
 
     private:
 

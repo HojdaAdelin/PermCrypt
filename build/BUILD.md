@@ -8,10 +8,11 @@ g++ -c src/specialVisuals.cpp -o specialVisuals.o
 g++ -c src/getFileSize.cpp -o getFileSize.o
 g++ -c src/manageFile.cpp -o manageFile.o
 g++ -c src/outputLog.cpp -o outputLog.o
+g++ -c src/fileMisc.cpp -o fileMisc.o
 
 2. Shared library
 
-g++ -shared -o libclever.so decryptFile.o encryptFile.o specialVisuals.o getFileSize.o manageFile.o outputLog.o
+g++ -shared -o libclever.so decryptFile.o encryptFile.o specialVisuals.o getFileSize.o manageFile.o outputLog.o fileMisc.o
 
 3. Use the shared library in your own project
 
