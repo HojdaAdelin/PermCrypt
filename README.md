@@ -84,5 +84,5 @@ void moveFile(std::string fileSource, std::string destinationSource);
 clever.moveFile();
 
 ```
-## To acces these functions you need to craete an object of the library main class.
+## To acces these functions you need to create an object of the library main class.
 ## The main class is "CleverCpp"
