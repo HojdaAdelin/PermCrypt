@@ -9,7 +9,11 @@ private:
 public:
 	permEncrypt(std::string text, std::string type) {
 
+		if (type == "reverse") {
 
+			encryptedText = reverseString(text);
+
+		}
 
 	}
 
